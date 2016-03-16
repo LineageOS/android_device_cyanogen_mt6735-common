@@ -1,0 +1,23 @@
+# RIL
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+ril.specific.sm_cause=0
+ril.external.md
+ril.current.share_modem=2
+ril.flightmode.poweroffMD=1
+ril.telephony.mode=0
+ril.radiooff.poweroffMD=0
+persist.radio.default.sim=0
+persist.radio.multisim.config=dsds
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
+
+# Wifi
+wifi.interface=wlan0
+wifi.tethering.interface=ap
+wifi.direct.interface=p2p0
+
+# Graphics
+ro.opengles.version=196608
