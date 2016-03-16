@@ -1,5 +1,5 @@
 # RIL
-rild.libpath=/system/lib/mtk-ril.so
+rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 ril.specific.sm_cause=0
 ril.external.md
