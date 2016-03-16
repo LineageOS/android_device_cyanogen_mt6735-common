@@ -1,3 +1,4 @@
+import init.mt6735.usb.rc
 import init.mt6735.modem.rc
 
 on init
