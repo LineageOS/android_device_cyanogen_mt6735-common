@@ -608,3 +608,9 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
     user system
     group system
     class core
+
+# Graphics
+service pq /system/bin/pq
+    class main
+    user system
+    group system graphics
