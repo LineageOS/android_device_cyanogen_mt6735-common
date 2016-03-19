@@ -63,6 +63,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.default
 
+# Radio dependencies
+PRODUCT_PACKAGES += \
+    muxreport \
+    terservice
+
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
