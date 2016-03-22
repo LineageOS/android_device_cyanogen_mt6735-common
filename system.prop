@@ -15,6 +15,8 @@ persist.radio.fd.off.counter=5
 persist.radio.fd.r8.counter=15
 persist.radio.fd.off.r8.counter=5
 
+ro.telephony.ril_class=MT6735
+
 # Wifi
 wifi.interface=wlan0
 wifi.tethering.interface=ap

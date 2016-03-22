@@ -117,6 +117,9 @@ endif
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/cyanogen/mt6735-common/ril
+
 # Releasetools
 #TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
