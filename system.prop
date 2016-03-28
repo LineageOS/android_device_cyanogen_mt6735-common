@@ -7,6 +7,7 @@ ril.current.share_modem=2
 ril.flightmode.poweroffMD=1
 ril.telephony.mode=0
 ril.radiooff.poweroffMD=0
+ro.mtk_enable_md1=1
 persist.radio.default.sim=0
 persist.radio.multisim.config=dsds
 persist.radio.fd.counter=15

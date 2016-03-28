@@ -613,3 +613,31 @@ service pq /system/bin/pq
     class main
     user system
     group system graphics
+
+# Logging infrastructure
+service mdlogger /system/bin/mdlogger
+    class main
+    user shell
+    group shell system radio sdcard_rw inet sdcard_r media_rw
+    disabled
+    oneshot
+
+service emdlogger1 /system/bin/emdlogger1
+    class main
+    user shell
+    group system shell radio sdcard_rw inet sdcard_r media_rw
+    disabled
+    oneshot
+
+service mobile_log_d /system/bin/mobile_log_d
+    class main
+
+service netdiag /system/bin/netdiag
+    class main
+
+on property:debug.MB.prdebug=1
+    write /sys/kernel/debug/dynamic_debug/control "file *mediatek* +p"
+    write /sys/kernel/debug/dynamic_debug/control "file *gpu* -p"
+on property:debug.MB.prdebug=0
+    write /sys/kernel/debug/dynamic_debug/control "file *mediatek* -p"
+

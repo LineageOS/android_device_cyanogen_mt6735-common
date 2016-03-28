@@ -85,6 +85,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Mediatek logging service
+PRODUCT_PACKAGES += \
+    MTKLogger \
+    emdlogger1 \
+    mdlogger \
+    mobile_log_d \
+    netdiag
+
 # Key Layouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/ACCDET.kl:system/usr/keylayouts/ACCDET.kl \
