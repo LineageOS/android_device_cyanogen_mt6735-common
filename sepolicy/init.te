@@ -1,0 +1,2 @@
+allow init ccci_device:chr_file { write ioctl };
+allow init devpts:chr_file ioctl;

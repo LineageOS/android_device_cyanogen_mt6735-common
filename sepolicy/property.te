@@ -1,0 +1,11 @@
+type wmt_prop, property_type;
+type mtk_md_prop, property_type;
+type mnld_prop, property_type;
+type ctl_gsm0710muxd_prop, property_type;
+type ctl_gsm0710muxdmd2_prop, property_type;
+type ctl_emdlogger_prop, property_type;
+type ctl_mdlogger_prop, property_type;
+type ctl_dualmdlogger_prop, property_type;
+type nvram_prop, property_type;
+type pq_conf_prop, property_type;
+type audiohal_prop, property_type;

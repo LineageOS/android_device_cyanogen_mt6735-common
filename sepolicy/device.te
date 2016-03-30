@@ -1,0 +1,28 @@
+# Radio devices
+type ccci_device, dev_type;
+type stpbt_device, dev_type;
+type stpgps_device, dev_type;
+type stpwmt_device, dev_type;
+type hwmsensor_device, dev_type;
+type wmtWifi_device, dev_type;
+type wmtdetect_device, dev_type;
+type gsm0710muxd_device, dev_type;
+type mdlog_device, dev_type;
+
+# Sensors
+type als_ps_device, dev_type;
+type mtk-adc-cali_device, dev_type;
+type gsensor_device, dev_type;
+
+# Media
+type fm_device, dev_type;
+type Vcodec_device, dev_type;
+
+# Block devices
+type proinfo_device, dev_type;
+type nvram_device, dev_type;
+type nvdata_device, dev_type;
+type protect1_device, dev_type;
+type protect2_device, dev_type;
+type userdata_device, dev_type;
+type cache_device, dev_type;
