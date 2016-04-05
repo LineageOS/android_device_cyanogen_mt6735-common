@@ -47,13 +47,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
+    tinyalsa \
+    tinycompress \
     tinymix \
+    tinyxml \
     libfs_mgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    libion
+
 # GPS
+PRODUCT_PACKAGES += \
+    libcurl
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
