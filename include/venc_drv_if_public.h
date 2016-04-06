@@ -343,6 +343,7 @@ typedef enum __VENC_DRV_SET_TYPE_T {
 	VENC_DRV_SET_TYPE_SLOW_MOTION_UNLOCK_HW,    /* /< Set to Slow Motion Video Recording for UnLock HW */
 	VENC_DRV_SET_TYPE_NONREFP,              /* /< Set Enable/Disable Non reference P frame */
 	VENC_DRV_SET_TYPE_CONFIG_QP,            /* /< Set init QP */
+        VENC_DRV_SET_TYPE_RFS_ON,
 	VENC_DRV_SET_TYPE_MAX = 0xFFFFFFFF      /* /< Max VENC_DRV_SET_TYPE_T value */
 } VENC_DRV_SET_TYPE_T;
 
