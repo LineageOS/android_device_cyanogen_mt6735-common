@@ -81,6 +81,7 @@
 # Sysfs nodes
 /sys/devices/virtual/gpsdrv(/.*)?                               u:object_r:sysfs_gps_file:s0
 /sys/kernel/ccci/boot                                           u:object_r:sysfs_ccci:s0
+/sys/devices/platform/mtk_disp_mgr.0/rgb                        u:object_r:livedisplay_sysfs:s0
 
 # Config/Runtime files
 /data/agps_supl(/.*)?                                           u:object_r:agpsd_data_file:s0
