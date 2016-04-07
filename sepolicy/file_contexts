@@ -67,6 +67,7 @@
 /dev/socket/mnld                                                u:object_r:mnld_socket:s0
 
 # Block devices
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot      u:object_r:boot_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo   u:object_r:proinfo_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram     u:object_r:nvram_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata    u:object_r:nvdata_device:s0

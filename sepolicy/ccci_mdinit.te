@@ -9,6 +9,7 @@ allow ccci_mdinit ccci_cfg_file:file create_file_perms;
 allow ccci_mdinit nvdata_file:dir search;
 allow ccci_mdinit nvdata_file:file rw_file_perms;
 allow ccci_mdinit sysfs_ccci:file rw_file_perms;
+allow ccci_mdinit sysfs_wake_lock:file rw_file_perms;
 
 allow ccci_mdinit nvram_device:blk_file rw_file_perms;
 allow ccci_mdinit mtk_md_prop:property_service set;
