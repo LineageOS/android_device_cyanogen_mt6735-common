@@ -23,6 +23,7 @@
 /protect_f(/.*)?                                                u:object_r:protect_f_data_file:s0
 /protect_s(/.*)?                                                u:object_r:protect_s_data_file:s0
 /nvdata(/.*)?                                                   u:object_r:nvdata_file:s0
+/protect_s/properties(/.*)?                                     u:object_r:persist_property_file:s0
 
 # Hardware nodes
 /dev/ttyC2                                                      u:object_r:gps_device:s0

@@ -25,6 +25,8 @@ on post-fs
     chown system system /protect_s
     chmod 0770 /protect_s
 
+    mkdir /protect_s/properties 0770 system system
+
 on post-fs-data
     # Should create dependent /data folders here
     chown root system /nvdata
