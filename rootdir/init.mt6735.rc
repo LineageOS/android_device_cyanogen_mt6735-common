@@ -1,5 +1,6 @@
 import init.mt6735.usb.rc
 import init.mt6735.modem.rc
+import init.target.rc
 
 on init
     # Platform-specific mount points
