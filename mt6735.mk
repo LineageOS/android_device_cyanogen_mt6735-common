@@ -59,7 +59,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.default
+    power.default \
+    power.mt6735
 
 # Radio dependencies
 PRODUCT_PACKAGES += \
