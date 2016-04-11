@@ -47,11 +47,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
-    tinyalsa \
-    tinycompress \
-    tinymix \
-    tinyxml \
+    libtinyalsa \
+    libtinycompress \
+    libtinymix \
+    libtinyxml \
     libfs_mgr
+
+PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml
@@ -59,6 +61,11 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     libion
+
+# FM
+PRODUCT_PACKAGES += \
+    libfmjni \
+    FMRadio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -100,7 +107,8 @@ PRODUCT_PACKAGES += \
     emdlogger1 \
     mdlogger \
     mobile_log_d \
-    netdiag
+    netdiag \
+    tcpdump
 
 # Key Layouts
 PRODUCT_COPY_FILES += \
