@@ -5,6 +5,7 @@
 /system/bin/emdlogger[0-9]+                                     u:object_r:emdlogger_exec:s0
 /system/bin/gsm0710muxd                                         u:object_r:gsm0710muxd_exec:s0
 /system/xbin/mnld                                               u:object_r:mnld_exec:s0
+/system/bin/muxreport                                           u:object_r:muxreport_exec:s0
 /system/bin/msensord                                            u:object_r:msensord_exec:s0
 /system/bin/mtk_agpsd                                           u:object_r:agpsd_exec:s0
 /system/bin/nvram_daemon                                        u:object_r:nvram_daemon_exec:s0

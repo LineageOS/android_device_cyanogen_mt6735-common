@@ -13,8 +13,9 @@ ctl.emdlogger1      u:object_r:ctl_emdlogger_prop:s0
 ctl.emdlogger2      u:object_r:ctl_emdlogger_prop:s0
 ctl.emdlogger3      u:object_r:ctl_emdlogger_prop:s0
 ctl.dualmdlogger    u:object_r:ctl_dualmdlogger_prop:s0
+ctl.muxreport-daemon u:object_r:ctl_muxreport-daemon_prop:s0
 service.nvram_init  u:object_r:nvram_prop:s0
 persist.sys.pq      u:object_r:pq_conf_prop:s0
 af.                 u:object_r:audiohal_prop:s0
 persist.af.         u:object_r:audiohal_prop:s0
-
+ril.mux.report.case u:object_r:ril_mux_report_case_prop:s0
