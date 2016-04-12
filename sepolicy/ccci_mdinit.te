@@ -6,8 +6,8 @@ init_daemon_domain(ccci_mdinit)
 allow ccci_mdinit ccci_device:chr_file rw_file_perms;
 allow ccci_mdinit ccci_cfg_file:dir create_dir_perms;
 allow ccci_mdinit ccci_cfg_file:file create_file_perms;
-allow ccci_mdinit nvdata_file:dir search;
-allow ccci_mdinit nvdata_file:file rw_file_perms;
+allow ccci_mdinit nvdata_file:dir rw_dir_perms;
+allow ccci_mdinit nvdata_file:file create_file_perms;
 allow ccci_mdinit sysfs_ccci:file rw_file_perms;
 allow ccci_mdinit sysfs_wake_lock:file rw_file_perms;
 

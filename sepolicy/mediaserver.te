@@ -1,6 +1,6 @@
 # nvram
-allow mediaserver nvdata_file:dir search;
-allow mediaserver nvdata_file:file r_file_perms;
+allow mediaserver nvdata_file:dir rw_dir_perms;
+allow mediaserver nvdata_file:file create_file_perms;
 allow mediaserver ccci_device:chr_file rw_file_perms;
 
 # camera
