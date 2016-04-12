@@ -14,8 +14,11 @@ allow ccci_mdinit sysfs_wake_lock:file rw_file_perms;
 allow ccci_mdinit nvram_device:blk_file rw_file_perms;
 allow ccci_mdinit mtk_md_prop:property_service set;
 
+allow ccci_mdinit ctl_ccci_fsd_prop:property_service set;
 allow ccci_mdinit ctl_emdlogger_prop:property_service set;
 allow ccci_mdinit ctl_gsm0710muxd_prop:property_service set;
+allow ccci_mdinit ctl_rildaemon_prop:property_service set;
+allow ccci_mdinit radio_prop:property_service set;
 allow ccci_mdinit ril_mux_report_case_prop:property_service set;
 
 allow ccci_mdinit mdlog_data_file:file r_file_perms;
