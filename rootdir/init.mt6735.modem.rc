@@ -6,8 +6,11 @@ on post-fs-data
 
     mkdir /data/ccci_cfg 0770 system radio
 
+    mkdir /data/mdlog 0775 shell system
+
     # Restore SELinux contexts
     restorecon /data/ccci_cfg
+    restorecon /data/mdlog
     restorecon_recursive /protect_f
     restorecon_recursive /protect_s
 
