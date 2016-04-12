@@ -3,7 +3,7 @@ type nvram_daemon, domain;
 
 init_daemon_domain(nvram_daemon)
 
-allow nvram_daemon self:capability { chown fsetid };
+allow nvram_daemon self:capability { fowner dac_override dac_read_search chown fsetid };
 allow nvram_daemon nvram_device:blk_file rw_file_perms;
 allow nvram_daemon nvdata_device:blk_file rw_file_perms;
 allow nvram_daemon nvdata_file:dir create_dir_perms;
