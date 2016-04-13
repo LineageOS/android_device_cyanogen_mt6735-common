@@ -2,6 +2,10 @@ import init.mt6735.usb.rc
 import init.mt6735.modem.rc
 import init.target.rc
 
+on early-init
+    # Turn off backlight on blank
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
 on init
     # Platform-specific mount points
     mkdir /protect_f 0771 system system
@@ -616,6 +620,12 @@ service pq /system/bin/pq
     class main
     user system
     group system graphics
+
+# Charger mode
+service charger /sbin/healthd -c
+    class charger
+    critical
+    seclabel u:r:healthd:s0
 
 # Logging infrastructure
 service mdlogger /system/bin/mdlogger
