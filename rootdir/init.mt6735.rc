@@ -32,6 +32,11 @@ on post-fs
 
     mkdir /protect_s/properties 0770 system system
 
+    mkdir /nvdata/md     0771 system radio
+    mkdir /nvdata/md_cmn 0771 system radio
+    mkdir /nvdata/media  0771 media audio
+    restorecon_recursive /nvdata/
+
 on post-fs-data
     # Should create dependent /data folders here
     chown root system /nvdata
