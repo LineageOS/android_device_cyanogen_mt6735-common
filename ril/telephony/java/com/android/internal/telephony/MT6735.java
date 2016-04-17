@@ -127,7 +127,7 @@ public class MT6735 extends RIL implements CommandsInterface {
                          Integer.parseInt(resp[0]) >= 2 &&
                          Integer.parseInt(resp[0]) <=5 ) {
                     // support USSD_SESSION_END and USSD_HANDLED_BY_STK as normal finishes
-                    resp[1] = "0";
+                    resp[0] = "0";
                 }
 
                 if (RILJ_LOGD) unsljLogMore(response, resp[0]);
