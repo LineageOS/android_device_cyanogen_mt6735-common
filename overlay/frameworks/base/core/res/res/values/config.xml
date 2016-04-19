@@ -89,4 +89,6 @@
 
     <integer name="config_bluetooth_operating_voltage_mv">0</integer>
 
+    <!-- Mediatek radios are why this option exists... :/ -->
+    <bool name="config_user_notification_of_restrictied_mobile_access">false</bool>
 </resources>

@@ -95,7 +95,6 @@ public class MT6735 extends RIL implements CommandsInterface {
             case RIL_UNSOL_CALL_INFO_INDICATION: ret = responseCallProgress(p); break;
             case RIL_UNSOL_SET_ATTACH_APN: ret = responseSetAttachApn(p); break;
             case RIL_UNSOL_ON_USSD: ret =  responseStrings(p); break;
-            case RIL_UNSOL_RESTRICTED_STATE_CHANGED: ret = responseInts(p); break; // sink these
             case RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED: ret = responseInts(p); break;
             default:
                 // Rewind the Parcel
