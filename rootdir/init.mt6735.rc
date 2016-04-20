@@ -17,6 +17,9 @@ on init
     write /proc/sys/net/core/wmem_max 2097152
     write /proc/sys/net/core/rmem_max 2097152
 
+    chown root system /dev/kmsg
+    chmod 0660 /dev/kmsg
+
 on fs
     mount_all /fstab.mt6735
 
@@ -605,7 +608,7 @@ service thermal_manager /system/bin/thermal_manager
     oneshot
 
 service fuelgauged /system/bin/fuelgauged
-    class mmain
+    class main
     user system
     group system
 
