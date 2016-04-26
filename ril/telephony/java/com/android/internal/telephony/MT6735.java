@@ -348,6 +348,10 @@ public class MT6735 extends RIL implements CommandsInterface {
         }
     }
 
+    private void refreshEmergencyList() {
+        if (mEccList != null) mEccList.updateEmergencyNumbersProperty();
+    }
+
     // Solicited request handling
     @Override
     protected RILRequest
@@ -366,10 +370,14 @@ public class MT6735 extends RIL implements CommandsInterface {
                 if (error == 0 || p.dataAvail() > 0) {
                     try {switch (tr.mRequest) {
                         /* Get those we're interested in */
+                        case RIL_REQUEST_EMERGENCY_DIAL:
+                        case RIL_REQUEST_SET_ECC_SERVICE_CATEGORY:
                         case RIL_REQUEST_DATA_REGISTRATION_STATE:
                         case RIL_REQUEST_SETUP_DATA_CALL:
                             rr = tr;
                             break;
+                        // vendor ril refreshes the properties while generating this answer. Do our own updates afterwards
+                        case RIL_REQUEST_GET_SIM_STATUS: refreshEmergencyList(); // no break, we want the superclass to process this
                     }} catch (Throwable thr) {
                         // Exceptions here usually mean invalid RIL responses
                         if (tr.mResult != null) {
@@ -401,6 +409,8 @@ public class MT6735 extends RIL implements CommandsInterface {
 
         if (error == 0 || p.dataAvail() > 0) {
             switch (rr.mRequest) {
+                case RIL_REQUEST_EMERGENCY_DIAL: ret =  responseVoid(p); break;
+                case RIL_REQUEST_SET_ECC_SERVICE_CATEGORY: ret =  responseVoid(p); break;
                 case RIL_REQUEST_DATA_REGISTRATION_STATE: ret =  fixupPSBearerDataRegistration(p); break;
                 case RIL_REQUEST_SETUP_DATA_CALL: ret =  fetchCidFromDataCall(p); break;
                 default:

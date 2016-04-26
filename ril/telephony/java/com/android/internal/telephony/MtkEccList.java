@@ -332,4 +332,53 @@ public class MtkEccList extends PhoneNumberUtils {
         return 0;
     }
 
+    public static void updateEmergencyNumbersProperty() {
+        ArrayList<String> sim1List = new ArrayList<String>();
+        ArrayList<String> sim2List = new ArrayList<String>();
+        ArrayList<String> fixedList = new ArrayList<String>();
+        ArrayList<String> fixedListNoSim = new ArrayList<String>();
+
+        if (mCustomizedEccList != null) {
+            for (EccEntry eccEntry : mCustomizedEccList) {
+                String ecc = eccEntry.getEcc();
+                if (!eccEntry.getCondition().equals(EccEntry.ECC_NO_SIM)) {
+                    fixedList.add(ecc);
+                } else if (!TextUtils.isEmpty(ecc)) {
+                    fixedListNoSim.add(ecc);
+                }
+            }
+        }
+
+        // Read from SIM1
+        String numbers = SystemProperties.get("ril.ecclist");
+        for (String emergencyNum : numbers.split(",")) {
+            if (!TextUtils.isEmpty(emergencyNum))
+                sim1List.add(emergencyNum);
+        }
+        // dedupe
+        sim1List.removeAll(fixedList);
+        sim1List.addAll(fixedList);
+        if (TextUtils.isEmpty(numbers)) {
+            sim1List.removeAll(fixedListNoSim);
+            sim1List.addAll(fixedListNoSim);
+        }
+        SystemProperties.set("ril.ecclist",TextUtils.join(",", sim1List));
+
+        // Read from SIM2
+        numbers = SystemProperties.get("ril.ecclist1");
+        for (String emergencyNum : numbers.split(",")) {
+            if (!TextUtils.isEmpty(emergencyNum))
+                sim2List.add(emergencyNum);
+        }
+        // dedupe
+        sim2List.removeAll(fixedList);
+        sim2List.addAll(fixedList);
+        if (TextUtils.isEmpty(numbers)) {
+            sim2List.removeAll(fixedListNoSim);
+            sim2List.addAll(fixedListNoSim);
+        }
+        SystemProperties.set("ril.ecclist1",TextUtils.join(",", sim2List));
+
+    }
+
 }
