@@ -13,6 +13,7 @@ type mdlog_device, dev_type;
 type als_ps_device, dev_type;
 type mtk-adc-cali_device, dev_type;
 type gsensor_device, dev_type;
+type msensor_device, dev_type;
 
 # Media
 type fm_device, dev_type;

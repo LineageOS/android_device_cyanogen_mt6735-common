@@ -1,5 +1,6 @@
 # Services
 /system/bin/6620_launcher                                       u:object_r:conn_launcher_exec:s0
+/system/bin/af7133d                                             u:object_r:af7133d_exec:s0
 /system/bin/ccci_fsd                                            u:object_r:ccci_fsd_exec:s0
 /system/bin/ccci_mdinit                                         u:object_r:ccci_mdinit_exec:s0
 /system/bin/emdlogger[0-9]+                                     u:object_r:emdlogger_exec:s0
@@ -46,6 +47,7 @@
 /dev/mtk-adc-cali(/.*)?                                         u:object_r:mtk-adc-cali_device:s0
 /dev/ccci.*                                                     u:object_r:ccci_device:s0
 /dev/gsensor(/.*)?                                              u:object_r:gsensor_device:s0
+/dev/msensor(/.*)?                                              u:object_r:msensor_device:s0
 /dev/stpgps(/.*)?                                               u:object_r:stpgps_device:s0
 /dev/stpwmt(/.*)?                                               u:object_r:stpwmt_device:s0
 /dev/wmtdetect                                                  u:object_r:wmtdetect_device:s0

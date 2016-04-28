@@ -4,6 +4,7 @@ wlan.mtk.wifi.5g    u:object_r:wmt_prop:s0
 mtk.md              u:object_r:mtk_md_prop:s0
 gps.clock.type      u:object_r:mnld_prop:s0
 gps.gps.version     u:object_r:mnld_prop:s0
+ctl.af7133d         u:object_r:ctl_af7133d_prop:s0
 ctl.ccci_fsd        u:object_r:ctl_ccci_fsd_prop:s0
 ctl.gsm0710muxd     u:object_r:ctl_gsm0710muxd_prop:s0
 ctl.gsm0710muxd-s   u:object_r:ctl_gsm0710muxd_prop:s0

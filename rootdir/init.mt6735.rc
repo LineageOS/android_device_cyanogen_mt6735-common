@@ -589,6 +589,12 @@ service mc6420d /system/bin/mc6420d
     group system
     class main
 
+service af7133d /system/bin/af7133d
+    disabled
+    user system
+    group system input
+    class main
+
 service orientationd /system/bin/orientationd
     disabled
     user system

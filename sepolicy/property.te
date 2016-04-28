@@ -1,6 +1,7 @@
 type wmt_prop, property_type;
 type mtk_md_prop, property_type;
 type mnld_prop, property_type;
+type ctl_af7133d_prop, property_type;
 type ctl_ccci_fsd_prop, property_type;
 type ctl_gsm0710muxd_prop, property_type;
 type ctl_gsm0710muxdmd2_prop, property_type;
