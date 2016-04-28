@@ -398,6 +398,7 @@ typedef enum __VENC_DRV_SCENARIO_T {
 	VENC_DRV_SCENARIO_LIVEPHOTO_EFFECT      = (1 << 2), /* /< LivePhoto effect transcoding */
 	VENC_DRV_SCENARIO_CAMERA_REC_SLOW_MOTION = (1 << 3), /* /< Camera recording with slow motion */
 	VENC_DRV_SCENARIO_SCREEN_REC            = (1 << 4), /* /< Screen recording */
+        VENC_DRV_SCENARIO_VILTE_REC            = (1 << 5), /* /< VILTE recording */
 } VENC_DRV_SCENARIO_T;
 
 
