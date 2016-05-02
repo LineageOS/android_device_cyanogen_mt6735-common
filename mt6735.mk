@@ -112,8 +112,8 @@ PRODUCT_PACKAGES += \
 
 # Key Layouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayouts/ACCDET.kl:system/usr/keylayouts/ACCDET.kl \
-    $(LOCAL_PATH)/keylayouts/mtk-kpd.kl:system/usr/keylayouts/mtk-kpd.kl
+    $(LOCAL_PATH)/keylayouts/ACCDET.kl:system/usr/keylayout/ACCDET.kl \
+    $(LOCAL_PATH)/keylayouts/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
 # Media
 PRODUCT_COPY_FILES += \
