@@ -3,6 +3,7 @@ import init.mt6735.modem.rc
 import init.target.rc
 
 on early-init
+    mount debugfs debugfs /sys/kernel/debug mode=755
     # Turn off backlight on blank
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
