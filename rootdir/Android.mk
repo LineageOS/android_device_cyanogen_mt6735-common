@@ -15,4 +15,7 @@ $(call add-rootdir-targets, \
     init.mt6735.rc \
     init.mt6735.modem.rc \
     init.mt6735.usb.rc \
+    meta_init.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
     ueventd.mt6735.rc)

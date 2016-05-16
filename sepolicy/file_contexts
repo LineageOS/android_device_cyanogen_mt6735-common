@@ -22,6 +22,10 @@
 /system/bin/mobile_log_d                                        u:object_r:mobile_log_d_exec:s0
 /system/bin/netdiag                                             u:object_r:netdiag_exec:s0
 
+# Meta mode
+/sbin/multi_init                                                u:object_r:init_exec:s0
+/system/bin/meta_tst                                            u:object_r:meta_tst_exec:s0
+
 # Files from firmware/nv partitions
 /protect_f(/.*)?                                                u:object_r:protect_f_data_file:s0
 /protect_s(/.*)?                                                u:object_r:protect_s_data_file:s0
@@ -30,6 +34,7 @@
 
 # Hardware nodes
 /dev/ttyC2                                                      u:object_r:gps_device:s0
+/dev/ttyGS0                                                     u:object_r:serial_device:s0
 /dev/gps(/.*)?                                                  u:object_r:gps_device:s0
 /dev/mali.*                                                     u:object_r:gpu_device:s0
 /dev/mtk_disp.*                                                 u:object_r:graphics_device:s0

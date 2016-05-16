@@ -1,0 +1,10 @@
+type meta_tst_exec, exec_type, file_type;
+type meta_tst, domain;
+
+init_daemon_domain(meta_tst)
+
+allow meta_tst ccci_device:chr_file rw_file_perms;
+allow meta_tst serial_device:chr_file rw_file_perms;
+allow meta_tst mdlog_device:chr_file rw_file_perms;
+
+allow meta_tst self:capability dac_override;
