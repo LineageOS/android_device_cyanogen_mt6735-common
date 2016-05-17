@@ -131,7 +131,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="20" />
         </MediaCodec>
         <MediaCodec name="OMX.MTK.VIDEO.ENCODER.AVC" type="video/avc" >
-            <Limit name="size" min="64x64" max="640x480" />
+            <Limit name="size" min="64x64" max="1920x1080" />
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Quirk name="requires-allocate-on-input-ports" />
