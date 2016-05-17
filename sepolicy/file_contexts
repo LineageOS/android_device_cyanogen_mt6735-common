@@ -86,6 +86,7 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache     u:object_r:cache_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery  u:object_r:recovery_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp       u:object_r:frp_block_device:s0
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata  u:object_r:metadata_block_device:s0
 /dev/block/zram0                                                u:object_r:swap_block_device:s0
 
 # Sysfs nodes
