@@ -7,4 +7,16 @@ allow meta_tst ccci_device:chr_file rw_file_perms;
 allow meta_tst serial_device:chr_file rw_file_perms;
 allow meta_tst mdlog_device:chr_file rw_file_perms;
 
+allow meta_tst nvdata_file:dir create_dir_perms;
+allow meta_tst nvdata_file:file create_file_perms;
+
+allow meta_tst nvdata_device:blk_file rw_file_perms;
+allow meta_tst nvram_device:blk_file rw_file_perms;
+allow meta_tst proinfo_device:blk_file rw_file_perms;
+
+allow meta_tst sysfs:file write;
+
+allow meta_tst powerctl_prop:property_service set;
+unix_socket_connect(meta_tst, property, init)
+
 allow meta_tst self:capability dac_override;
