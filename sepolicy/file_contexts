@@ -25,6 +25,7 @@
 # Meta mode
 /sbin/multi_init                                                u:object_r:init_exec:s0
 /system/bin/meta_tst                                            u:object_r:meta_tst_exec:s0
+/system/bin/factory                                             u:object_r:factory_exec:s0
 
 # Files from firmware/nv partitions
 /protect_f(/.*)?                                                u:object_r:protect_f_data_file:s0
@@ -33,6 +34,8 @@
 /protect_s/properties(/.*)?                                     u:object_r:persist_property_file:s0
 
 # Hardware nodes
+/dev/accdet                                                     u:object_r:accdet_device:s0
+/dev/devmap                                                     u:object_r:devmap_device:s0
 /dev/ttyC2                                                      u:object_r:gps_device:s0
 /dev/ttyGS0                                                     u:object_r:serial_device:s0
 /dev/gps(/.*)?                                                  u:object_r:gps_device:s0

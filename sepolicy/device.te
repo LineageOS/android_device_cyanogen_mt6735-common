@@ -16,6 +16,8 @@ type gsensor_device, dev_type;
 type msensor_device, dev_type;
 
 # Media
+type accdet_device, dev_type;
+type devmap_device, dev_type;
 type fm_device, dev_type;
 type Vcodec_device, dev_type;
 
