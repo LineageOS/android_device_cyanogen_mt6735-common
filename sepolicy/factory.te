@@ -20,10 +20,10 @@ allow factory graphics_device:dir search;
 allow factory graphics_device:chr_file rw_file_perms;
 allow factory input_device:dir r_dir_perms;
 allow factory input_device:chr_file r_file_perms;
+allow factory pmic_adc_device:chr_file rw_file_perms;
 allow factory rtc_device:chr_file rw_file_perms;
 allow factory stpbt_device:chr_file rw_file_perms;
 allow factory wmtWifi_device:chr_file rw_file_perms;
-
 
 # NVRAM
 allow factory nvdata_file:dir create_dir_perms;
@@ -34,6 +34,10 @@ allow factory proinfo_device:blk_file rw_file_perms;
 
 
 # Storage
+allow factory mnt_user_file:dir search;
+allow factory mmc_device:blk_file rw_file_perms;
+allow factory shell_data_file:dir create_dir_perms;
+allow factory shell_data_file:file create_file_perms;
 allow factory storage_file:dir r_dir_perms;
 allow factory storage_file:lnk_file r_file_perms;
 allow factory storage_file:file r_file_perms;

@@ -51,6 +51,7 @@
 /dev/kd_camera_flashlight                                       u:object_r:camera_device:s0
 /dev/MAINAF                                                     u:object_r:camera_device:s0
 /dev/MTK_SMI                                                    u:object_r:camera_device:s0
+/dev/MT_pmic_adc_cali                                           u:object_r:pmic_adc_device:s0
 /dev/als_ps(/.*)?                                               u:object_r:als_ps_device:s0
 /dev/mtk-adc-cali(/.*)?                                         u:object_r:mtk-adc-cali_device:s0
 /dev/ccci.*                                                     u:object_r:ccci_device:s0
@@ -90,6 +91,7 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery  u:object_r:recovery_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp       u:object_r:frp_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata  u:object_r:metadata_block_device:s0
+/dev/block/mmcblk1                                              u:object_r:mmc_device:s0
 /dev/block/zram0                                                u:object_r:swap_block_device:s0
 
 # Sysfs nodes
