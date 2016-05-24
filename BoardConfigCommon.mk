@@ -55,6 +55,7 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.mt6735
 
 # Audio
+USE_CUSTOM_AUDIO_POLICY := 1
 BOARD_USES_MTK_AUDIO := true
 
 # Bootloader
