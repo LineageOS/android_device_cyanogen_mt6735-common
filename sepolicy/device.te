@@ -28,6 +28,4 @@ type nvram_device, dev_type;
 type nvdata_device, dev_type;
 type protect1_device, dev_type;
 type protect2_device, dev_type;
-type userdata_device, dev_type;
-type cache_device, dev_type;
 type mmc_device, dev_type;

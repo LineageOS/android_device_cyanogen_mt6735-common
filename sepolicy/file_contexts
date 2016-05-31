@@ -86,8 +86,8 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata    u:object_r:nvdata_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1  u:object_r:protect1_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2  u:object_r:protect2_device:s0
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata  u:object_r:userdata_device:s0
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache     u:object_r:cache_device:s0
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata  u:object_r:userdata_block_device:s0
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache     u:object_r:cache_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery  u:object_r:recovery_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp       u:object_r:frp_block_device:s0
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata  u:object_r:metadata_block_device:s0
