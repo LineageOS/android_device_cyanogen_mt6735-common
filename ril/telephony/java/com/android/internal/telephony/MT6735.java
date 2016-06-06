@@ -56,8 +56,6 @@ public class MT6735 extends RIL implements CommandsInterface {
     private static final int RIL_REQUEST_SET_ECC_SERVICE_CATEGORY = 2088;
     private static final int RIL_REQUEST_SET_ECC_LIST = 2089;
 
-    private static boolean mPendingLteSwitch = false;
-
     private int[] dataCallCids = { -1, -1, -1, -1, -1 };
 
     private Context mContext;
@@ -238,22 +236,13 @@ public class MT6735 extends RIL implements CommandsInterface {
         }
 
         send(rr);
-        if (mPendingLteSwitch) {
-            mPendingLteSwitch = false;
-            setPreferredNetworkType(RILConstants.NETWORK_MODE_LTE_GSM_WCDMA, null);
-        }
     }
 
     protected Object
     responseSetAttachApn(Parcel p) {
-        // The stack refuses to attach to LTE unless an IA APN was set. Degrade
-        // the RAT, wait for the startup flow to run setInitialAttachApn, then
-        // ramp it up to LTE again
-        setPreferredNetworkType(RILConstants.NETWORK_MODE_WCDMA_PREF, null);
-        mPendingLteSwitch = true;
-        // A dummy IA _will_ unblock things, but it'll fail to attach to LTE,
-        // and will take too long to try again. So don't.
-        //setInitialAttachApn("dummy_ia","IP",1,"","",null);
+        // The stack refuses to attach to LTE unless an IA APN was set, and
+        // will loop until it happens. Set an empty one to unblock.
+        setInitialAttachApn("","",0,"","",null);
         return null;
     }
 
