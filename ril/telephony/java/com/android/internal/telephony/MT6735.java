@@ -401,6 +401,7 @@ public class MT6735 extends RIL implements CommandsInterface {
                         case RIL_REQUEST_SET_ECC_SERVICE_CATEGORY:
                         case RIL_REQUEST_DATA_REGISTRATION_STATE:
                         case RIL_REQUEST_SETUP_DATA_CALL:
+                        case RIL_REQUEST_ALLOW_DATA:
                             rr = tr;
                             break;
                         // vendor ril refreshes the properties while generating this answer. Do our own updates afterwards
@@ -440,6 +441,7 @@ public class MT6735 extends RIL implements CommandsInterface {
                 case RIL_REQUEST_SET_ECC_SERVICE_CATEGORY: ret =  responseVoid(p); break;
                 case RIL_REQUEST_DATA_REGISTRATION_STATE: ret =  fixupPSBearerDataRegistration(p); break;
                 case RIL_REQUEST_SETUP_DATA_CALL: ret =  fetchCidFromDataCall(p); break;
+                case RIL_REQUEST_ALLOW_DATA: ret =  responseVoid(p); mVoiceNetworkStateRegistrants.notifyRegistrants(new AsyncResult(null, null, null)); break;
                 default:
                     throw new RuntimeException("Shouldn't be here: " + rr.mRequest);
             }
