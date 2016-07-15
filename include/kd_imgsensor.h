@@ -172,12 +172,13 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define S5K5BAFX_SENSOR_ID                      0x05BA
 #define S5K5E2YA_SENSOR_ID                      0x5e20
 #define S5K4H5YX_2LANE_SENSOR_ID                0x485B
-#define S5K4H5YC_SENSOR_ID                      0x485B
+#define S5K4H5YC_SENSOR_ID                      0x485C
 #define S5K83AFX_SENSOR_ID                      0x01C4
 #define S5K5CAGX_SENSOR_ID                      0x05ca
 #define S5K8AAYX_MIPI_SENSOR_ID                 0x08aa
 #define S5K8AAYX_SENSOR_ID                      0x08aa
 #define S5K3L2_SENSOR_ID			0x30C2
+#define S5K4H8_SENSOR_ID				0x4089
 /*HI*/
 #define HI841_SENSOR_ID                         0x0841
 #define HI707_SENSOR_ID                         0x00b8
@@ -340,6 +341,7 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define SENSOR_DRVNAME_S5K5E2YA_MIPI_RAW        "s5k5e2yamipiraw"
 #define SENSOR_DRVNAME_S5K8AAYX_MIPI_YUV        "s5k8aayxmipiyuv"
 #define SENSOR_DRVNAME_S5K8AAYX_YUV             "s5k8aayxyuv"
+#define SENSOR_DRVNAME_S5K4H8_MIPI_RAW          "s5k4h8mipiraw"
 /*HI*/
 #define SENSOR_DRVNAME_HI841_MIPI_RAW           "hi841mipiraw"
 #define SENSOR_DRVNAME_HI707_YUV                "hi707yuv"
