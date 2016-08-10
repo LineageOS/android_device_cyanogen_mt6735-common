@@ -160,6 +160,8 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define S5K3M2_SENSOR_ID                        0x30D2
 #define S5K3M2_SENSOR_ID_YD                     (0x30D2+1)
 #define S5K3M2_SENSOR_ID_SUNWIN                 (0x30D2+2)
+#define S5K3M2_SENSOR_ID_SEASONS                (0x30D2+2)
+#define S5K3M2_SENSOR_ID_QT                     (0x30D2+3)
 #define S5K3AAEA_SENSOR_ID                      0x07AC
 #define S5K3BAFB_SENSOR_ID                      0x7070
 #define S5K3H7Y_SENSOR_ID                       0x3087
@@ -194,6 +196,7 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define HI251_SENSOR_ID                         0x0084
 #define HI191MIPI_SENSOR_ID                     0x0191
 #define HIVICF_SENSOR_ID                        0x0081
+#define HI843B_SENSOR_ID                        0x0843
 /*MT*/
 #define MT9D011_SENSOR_ID                       0x1511
 #define MT9D111_SENSOR_ID                       0x1511
@@ -335,6 +338,8 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define SENSOR_DRVNAME_S5K3M2_MIPI_RAW          "s5k3m2mipiraw"
 #define SENSOR_DRVNAME_S5K3M2_MIPI_RAW_YD       "s5k3m2mipirawyd"
 #define SENSOR_DRVNAME_S5K3M2_MIPI_RAW_SUNWIN   "s5k3m2mipirawsunwin"
+#define SENSOR_DRVNAME_S5K3M2_MIPI_RAW_SEASONS  "s5k3m2mipirawseasons"
+#define SENSOR_DRVNAME_S5K3M2_MIPI_RAW_QT       "s5k3m2mipirawqt"
 #define SENSOR_DRVNAME_S5K3H2YX_MIPI_RAW        "s5k3h2yxmipiraw"
 #define SENSOR_DRVNAME_S5K3H7Y_MIPI_RAW         "s5k3h7ymipiraw"
 #define SENSOR_DRVNAME_S5K4H5YC_MIPI_RAW        "s5k4h5ycmipiraw"
@@ -357,6 +362,7 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define SENSOR_DRVNAME_HI544_MIPI_RAW           "hi544mipiraw"
 #define SENSOR_DRVNAME_HI253_YUV                "hi253yuv"
 #define SENSOR_DRVNAME_HI191_MIPI_RAW           "hi191mipiraw"
+#define SENSOR_DRVNAME_HI843B_MIPI_RAW          "hi843bmipiraw"
 /*MT*/
 #define SENSOR_DRVNAME_MT9P012_RAW              "mt9p012"
 #define SENSOR_DRVNAME_MT9P015_RAW              "mt9p015"
