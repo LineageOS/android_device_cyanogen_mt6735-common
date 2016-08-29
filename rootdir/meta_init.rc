@@ -117,7 +117,8 @@ on property:sys.boot_from_charger_mode=1
 
 # Load properties from /system/ + /factory after fs mount.
 on load_all_props_action
-    load_all_props
+    load_system_props
+    load_persist_props
     start logd
     start logd-reinit
 

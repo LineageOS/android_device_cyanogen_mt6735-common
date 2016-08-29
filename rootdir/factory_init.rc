@@ -105,7 +105,8 @@ loglevel 5
 
     # Load properties from /system/ + /factory after fs mount.
     on load_all_props_action
-    load_all_props
+    load_system_props
+    load_persist_props
 
     # Mount filesystems and start core system services.
     on late-init
