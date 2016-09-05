@@ -13,3 +13,4 @@ type nvram_prop, property_type;
 type pq_conf_prop, property_type;
 type audiohal_prop, property_type;
 type ril_mux_report_case_prop, property_type;
+type vold_encryption_type_prop, property_type;

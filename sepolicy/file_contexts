@@ -3,6 +3,7 @@
 /system/bin/af7133d                                             u:object_r:af7133d_exec:s0
 /system/bin/ccci_fsd                                            u:object_r:ccci_fsd_exec:s0
 /system/bin/ccci_mdinit                                         u:object_r:ccci_mdinit_exec:s0
+/system/bin/md_ctrl                                             u:object_r:md_ctrl_exec:s0
 /system/bin/emdlogger[0-9]+                                     u:object_r:emdlogger_exec:s0
 /system/bin/fuelgauged                                          u:object_r:fuelgauged_exec:s0
 /system/bin/gsm0710muxd                                         u:object_r:gsm0710muxd_exec:s0

@@ -94,3 +94,25 @@ service ccci_rpcd /system/bin/ccci_rpcd 0
     group radio system
     class core
     oneshot
+
+on property:vold.decrypt=trigger_reset_main
+    start stop_modem
+
+on property:vold.decrypt=trigger_shutdown_framework
+    start stop_modem
+
+on property:vold.decrypt=trigger_restart_min_framework
+    start start_modem
+
+on property:vold.decrypt=trigger_restart_framework
+    start start_modem
+
+service stop_modem /system/bin/md_ctrl 0
+    class main
+    disabled
+    oneshot
+
+service start_modem /system/bin/md_ctrl 1
+    class main
+    disabled
+    oneshot
