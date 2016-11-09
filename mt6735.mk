@@ -107,6 +107,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+ifneq ($(TARGET_BUILD_VARIANT), user)
 # Mediatek logging service
 PRODUCT_PACKAGES += \
     MTKLogger \
@@ -115,6 +116,7 @@ PRODUCT_PACKAGES += \
     mobile_log_d \
     netdiag \
     tcpdump
+endif
 
 # Key Layouts
 PRODUCT_COPY_FILES += \
