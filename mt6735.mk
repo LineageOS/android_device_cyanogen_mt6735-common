@@ -90,6 +90,9 @@ PRODUCT_PACKAGES += \
     muxreport \
     terservice
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
+
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
